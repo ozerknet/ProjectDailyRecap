@@ -1,0 +1,17 @@
+.DS_Store
+.rsynced
+.idea/
+executables
+node_modules
+**/target/
+/target/
+*/target/*
+.classpath
+.project
+.settings
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.iml
