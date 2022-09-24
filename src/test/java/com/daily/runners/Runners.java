@@ -12,18 +12,18 @@ import org.junit.runner.RunWith;
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
-//                "json:target/json-reports/cucumber.json",
-//                "junit:target/xml-report/cucumber.xml",
-//                "rerun:target/failedRerun.txt",
-                                                        //   "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failedRerun.txt",
+
         },
 
-        features = "src/test/resources/feature",        //path of features folder
-        glue = {"com.gfc.stepDefinitions"},             //path of the step definitions folder
-        tags = "",                                  //tags sadece specific bir scenario yu run yapar
-        dryRun =false                                    // missing step definition i buluruz,eger yoksa test 1 sn de bitter
-                                                        // dryRun = true la browswer(yani web sayfasina girmeden) kullanmadan test yapariz
-                                                        //dryRun = false runs with the browser
+        features = "src/test/resources/feature",
+        glue = {"com.gfc.stepDefinitions"},
+        tags = "",
+        dryRun =false
+
+
 )
 public class Runners {
 
